@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2ACCDCEC05398280AAD98927 /* Pods_TraktTVClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153F4A41250C33F459A00817 /* Pods_TraktTVClient.framework */; };
+		4004BBB51D4B9DF9005C0330 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4004BBB41D4B9DF9005C0330 /* Movie.swift */; };
+		4004BBB71D4BBCBC005C0330 /* TraktTVAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4004BBB61D4BBCBC005C0330 /* TraktTVAPI.swift */; };
+		401069671D4ABAC900DC6C6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401069661D4ABAC900DC6C6A /* AppDelegate.swift */; };
+		4010696C1D4ABAC900DC6C6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4010696A1D4ABAC900DC6C6A /* Main.storyboard */; };
+		4010696E1D4ABAC900DC6C6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4010696D1D4ABAC900DC6C6A /* Assets.xcassets */; };
+		401069711D4ABAC900DC6C6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4010696F1D4ABAC900DC6C6A /* LaunchScreen.storyboard */; };
+		4010697A1D4AC12100DC6C6A /* MoviesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401069791D4AC12100DC6C6A /* MoviesPresenter.swift */; };
+		4010697C1D4AC19800DC6C6A /* MoviesPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4010697B1D4AC19800DC6C6A /* MoviesPresenterImpl.swift */; };
+		401069801D4AC2FE00DC6C6A /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4010697F1D4AC2FE00DC6C6A /* MoviesViewController.swift */; };
+		401069821D4AC41100DC6C6A /* MoviesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401069811D4AC41100DC6C6A /* MoviesProtocol.swift */; };
+		401069841D4AC9CD00DC6C6A /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401069831D4AC9CD00DC6C6A /* MovieCell.swift */; };
+		40184B4D1D4E1AE100C5EDB4 /* MoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40184B4C1D4E1AE100C5EDB4 /* MoviesResponse.swift */; };
+		40184B521D4E2E8100C5EDB4 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40184B511D4E2E8100C5EDB4 /* UIImageView.swift */; };
+		40184B571D4E597600C5EDB4 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40184B561D4E597600C5EDB4 /* RootWireframe.swift */; };
+		40184B591D4E59EC00C5EDB4 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40184B581D4E59EC00C5EDB4 /* UIStoryboard.swift */; };
+		40184B681D4E5FD000C5EDB4 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40184B671D4E5FD000C5EDB4 /* MoviesRepository.swift */; };
+		40C44BFF1D4FA39D00CEC8BC /* MoviesFilteredResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C44BFE1D4FA39D00CEC8BC /* MoviesFilteredResponse.swift */; };
+		40C44C011D4FA6FD00CEC8BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C44C001D4FA6FD00CEC8BC /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		153F4A41250C33F459A00817 /* Pods_TraktTVClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TraktTVClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4004BBB41D4B9DF9005C0330 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		4004BBB61D4BBCBC005C0330 /* TraktTVAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraktTVAPI.swift; sourceTree = "<group>"; };
+		401069631D4ABAC900DC6C6A /* TraktTVClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TraktTVClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		401069661D4ABAC900DC6C6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4010696B1D4ABAC900DC6C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4010696D1D4ABAC900DC6C6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		401069701D4ABAC900DC6C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		401069721D4ABAC900DC6C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		401069791D4AC12100DC6C6A /* MoviesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesPresenter.swift; sourceTree = "<group>"; };
+		4010697B1D4AC19800DC6C6A /* MoviesPresenterImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesPresenterImpl.swift; sourceTree = "<group>"; };
+		4010697F1D4AC2FE00DC6C6A /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		401069811D4AC41100DC6C6A /* MoviesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesProtocol.swift; sourceTree = "<group>"; };
+		401069831D4AC9CD00DC6C6A /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		40184B4C1D4E1AE100C5EDB4 /* MoviesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesResponse.swift; sourceTree = "<group>"; };
+		40184B511D4E2E8100C5EDB4 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		40184B561D4E597600C5EDB4 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		40184B581D4E59EC00C5EDB4 /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		40184B671D4E5FD000C5EDB4 /* MoviesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
+		40C44BFE1D4FA39D00CEC8BC /* MoviesFilteredResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesFilteredResponse.swift; sourceTree = "<group>"; };
+		40C44C001D4FA6FD00CEC8BC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A57B92A0790F0414F7601893 /* Pods-TraktTVClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraktTVClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TraktTVClient/Pods-TraktTVClient.debug.xcconfig"; sourceTree = "<group>"; };
+		E40D0B0AAF9F99CA23454FA0 /* Pods-TraktTVClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraktTVClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-TraktTVClient/Pods-TraktTVClient.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		401069601D4ABAC900DC6C6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ACCDCEC05398280AAD98927 /* Pods_TraktTVClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4004BBB31D4B9DB2005C0330 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40184B661D4E5FA300C5EDB4 /* Repository */,
+				4004BBB41D4B9DF9005C0330 /* Movie.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4004BBB81D4BBE25005C0330 /* TraktTVAPI */ = {
+			isa = PBXGroup;
+			children = (
+				4004BBB61D4BBCBC005C0330 /* TraktTVAPI.swift */,
+				40184B541D4E31C600C5EDB4 /* Data */,
+			);
+			name = TraktTVAPI;
+			sourceTree = "<group>";
+		};
+		4010695A1D4ABAC900DC6C6A = {
+			isa = PBXGroup;
+			children = (
+				401069651D4ABAC900DC6C6A /* TraktTVClient */,
+				401069641D4ABAC900DC6C6A /* Products */,
+				89B4EEB916FB1DF01153EB8F /* Pods */,
+				F01FC0711E7FB75F6CF36154 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		401069641D4ABAC900DC6C6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				401069631D4ABAC900DC6C6A /* TraktTVClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		401069651D4ABAC900DC6C6A /* TraktTVClient */ = {
+			isa = PBXGroup;
+			children = (
+				401069661D4ABAC900DC6C6A /* AppDelegate.swift */,
+				40184B551D4E595B00C5EDB4 /* Commons */,
+				40184B531D4E2E8500C5EDB4 /* Extensions */,
+				4004BBB81D4BBE25005C0330 /* TraktTVAPI */,
+				40184B5D1D4E5C2300C5EDB4 /* Modules */,
+				4010696A1D4ABAC900DC6C6A /* Main.storyboard */,
+				4010696D1D4ABAC900DC6C6A /* Assets.xcassets */,
+				4010696F1D4ABAC900DC6C6A /* LaunchScreen.storyboard */,
+				401069721D4ABAC900DC6C6A /* Info.plist */,
+			);
+			path = TraktTVClient;
+			sourceTree = "<group>";
+		};
+		401069781D4AC01600DC6C6A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				401069791D4AC12100DC6C6A /* MoviesPresenter.swift */,
+				4010697B1D4AC19800DC6C6A /* MoviesPresenterImpl.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		4010697E1D4AC2D600DC6C6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				401069811D4AC41100DC6C6A /* MoviesProtocol.swift */,
+				4010697F1D4AC2FE00DC6C6A /* MoviesViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		40184B531D4E2E8500C5EDB4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				40184B511D4E2E8100C5EDB4 /* UIImageView.swift */,
+				40184B581D4E59EC00C5EDB4 /* UIStoryboard.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		40184B541D4E31C600C5EDB4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				40184B4C1D4E1AE100C5EDB4 /* MoviesResponse.swift */,
+				40C44BFE1D4FA39D00CEC8BC /* MoviesFilteredResponse.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		40184B551D4E595B00C5EDB4 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				40184B5A1D4E5BF200C5EDB4 /* Cells */,
+				40184B561D4E597600C5EDB4 /* RootWireframe.swift */,
+				40C44C001D4FA6FD00CEC8BC /* Constants.swift */,
+			);
+			name = Commons;
+			sourceTree = "<group>";
+		};
+		40184B5A1D4E5BF200C5EDB4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				401069831D4AC9CD00DC6C6A /* MovieCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		40184B5B1D4E5BFD00C5EDB4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				401069781D4AC01600DC6C6A /* Presenter */,
+				4010697E1D4AC2D600DC6C6A /* View */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		40184B5C1D4E5C1000C5EDB4 /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				4004BBB31D4B9DB2005C0330 /* Model */,
+				40184B5B1D4E5BFD00C5EDB4 /* UI */,
+			);
+			name = MovieList;
+			sourceTree = "<group>";
+		};
+		40184B5D1D4E5C2300C5EDB4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				40184B5C1D4E5C1000C5EDB4 /* MovieList */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		40184B661D4E5FA300C5EDB4 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				40184B671D4E5FD000C5EDB4 /* MoviesRepository.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		89B4EEB916FB1DF01153EB8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A57B92A0790F0414F7601893 /* Pods-TraktTVClient.debug.xcconfig */,
+				E40D0B0AAF9F99CA23454FA0 /* Pods-TraktTVClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F01FC0711E7FB75F6CF36154 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				153F4A41250C33F459A00817 /* Pods_TraktTVClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		401069621D4ABAC900DC6C6A /* TraktTVClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 401069751D4ABAC900DC6C6A /* Build configuration list for PBXNativeTarget "TraktTVClient" */;
+			buildPhases = (
+				34AFE44E3B04840CC8AEDA38 /* Check Pods Manifest.lock */,
+				4010695F1D4ABAC900DC6C6A /* Sources */,
+				401069601D4ABAC900DC6C6A /* Frameworks */,
+				401069611D4ABAC900DC6C6A /* Resources */,
+				05038B833BD5D271D3F7215B /* Embed Pods Frameworks */,
+				F82F548A596EEE863201C20D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TraktTVClient;
+			productName = TraktTVClient;
+			productReference = 401069631D4ABAC900DC6C6A /* TraktTVClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4010695B1D4ABAC900DC6C6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Cristian Villaseca";
+				TargetAttributes = {
+					401069621D4ABAC900DC6C6A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4010695E1D4ABAC900DC6C6A /* Build configuration list for PBXProject "TraktTVClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4010695A1D4ABAC900DC6C6A;
+			productRefGroup = 401069641D4ABAC900DC6C6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				401069621D4ABAC900DC6C6A /* TraktTVClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		401069611D4ABAC900DC6C6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				401069711D4ABAC900DC6C6A /* LaunchScreen.storyboard in Resources */,
+				4010696E1D4ABAC900DC6C6A /* Assets.xcassets in Resources */,
+				4010696C1D4ABAC900DC6C6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05038B833BD5D271D3F7215B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TraktTVClient/Pods-TraktTVClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34AFE44E3B04840CC8AEDA38 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F82F548A596EEE863201C20D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TraktTVClient/Pods-TraktTVClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4010695F1D4ABAC900DC6C6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40184B591D4E59EC00C5EDB4 /* UIStoryboard.swift in Sources */,
+				40184B681D4E5FD000C5EDB4 /* MoviesRepository.swift in Sources */,
+				4004BBB51D4B9DF9005C0330 /* Movie.swift in Sources */,
+				401069821D4AC41100DC6C6A /* MoviesProtocol.swift in Sources */,
+				40184B4D1D4E1AE100C5EDB4 /* MoviesResponse.swift in Sources */,
+				40C44C011D4FA6FD00CEC8BC /* Constants.swift in Sources */,
+				401069801D4AC2FE00DC6C6A /* MoviesViewController.swift in Sources */,
+				401069841D4AC9CD00DC6C6A /* MovieCell.swift in Sources */,
+				40184B521D4E2E8100C5EDB4 /* UIImageView.swift in Sources */,
+				40C44BFF1D4FA39D00CEC8BC /* MoviesFilteredResponse.swift in Sources */,
+				40184B571D4E597600C5EDB4 /* RootWireframe.swift in Sources */,
+				4010697C1D4AC19800DC6C6A /* MoviesPresenterImpl.swift in Sources */,
+				4004BBB71D4BBCBC005C0330 /* TraktTVAPI.swift in Sources */,
+				401069671D4ABAC900DC6C6A /* AppDelegate.swift in Sources */,
+				4010697A1D4AC12100DC6C6A /* MoviesPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4010696A1D4ABAC900DC6C6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4010696B1D4ABAC900DC6C6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4010696F1D4ABAC900DC6C6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				401069701D4ABAC900DC6C6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		401069731D4ABAC900DC6C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		401069741D4ABAC900DC6C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		401069761D4ABAC900DC6C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A57B92A0790F0414F7601893 /* Pods-TraktTVClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TraktTVClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cvillaseca.TraktTVClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		401069771D4ABAC900DC6C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E40D0B0AAF9F99CA23454FA0 /* Pods-TraktTVClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TraktTVClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cvillaseca.TraktTVClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4010695E1D4ABAC900DC6C6A /* Build configuration list for PBXProject "TraktTVClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				401069731D4ABAC900DC6C6A /* Debug */,
+				401069741D4ABAC900DC6C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		401069751D4ABAC900DC6C6A /* Build configuration list for PBXNativeTarget "TraktTVClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				401069761D4ABAC900DC6C6A /* Debug */,
+				401069771D4ABAC900DC6C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4010695B1D4ABAC900DC6C6A /* Project object */;
+}
